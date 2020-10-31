@@ -1,5 +1,5 @@
 package lv1;
-
+//수박수문제
 public class WaterMelon {
 	 public String watermelon(int n) {
 	        String answer = "";
