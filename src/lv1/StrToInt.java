@@ -1,6 +1,6 @@
 package lv1;
 
-//문자열을 정수로 바꾸기!!~~~~
+//문자열을 정수로 바꾸기!!(커밋 수정)
 public class StrToInt {
 	public int getStrToInt(String s) {
 		int answer = 0;
