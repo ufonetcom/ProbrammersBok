@@ -1,6 +1,7 @@
 package lv1;
 
-public class Twointsum {
+//두 정수 사이의 합
+public class SumAtoB {
 	public long towintsum(int a, int b) {
         long answer = 0;
         
@@ -20,7 +21,7 @@ public class Twointsum {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Twointsum twointsum = new Twointsum();
+		SumAtoB twointsum = new SumAtoB();
 		System.out.println(twointsum.towintsum(3, 7));
 
 	}
