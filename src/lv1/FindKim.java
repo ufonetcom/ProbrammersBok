@@ -14,7 +14,7 @@ public class FindKim {
     }
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stu
+		// TODO Auto-generated method st
 		FindKim kimsearch = new FindKim();
 		String[] names = {"Jane","lee","Kim",};
 		System.out.println(kimsearch.findKim(names));
