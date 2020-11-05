@@ -24,7 +24,7 @@ public class NoRealTest {
         	   tmpcnt[2]++;
            }
         }
-        //정답횟수가 들어있는 학생배열의 최대값 원소를 max로 빼낸다.
+        //정답횟수가 들어있는 학생배열의 최대값 원소를 max로 빼낸다..
         int max=tmpcnt[0];
         for(int i=1; i<tmpcnt.length; i++) {
            if(max<tmpcnt[i]) {
