@@ -20,7 +20,7 @@ public class Sportssuit {
               }
            }
         }
-//        2벌의 옷을 가지고 있는 사람이 양쪽 중에 한쪽을 옷을 빌려주고 reserve 배열에서 원소를 지워준다(-1을 만든다.).
+//        2벌의 옷을 가지고 있는 사람이 양쪽 중에 한쪽을 옷을 빌려주고 reserve 배열에서 원소를 지워준다(-1을 만든다.). 
         for(int i=0; i<lost.length; i++) {
            for(int j=0; j<reserve.length; j++) {
               if(lost[i]-reserve[j]==-1 || lost[i]-reserve[j]==1) {
