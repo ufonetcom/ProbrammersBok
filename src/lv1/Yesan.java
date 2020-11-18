@@ -25,7 +25,6 @@ public class Yesan {
       Yesan ye = new Yesan();
 //      int[] d = {1,3,2,5,4};
       int[] d = {2,2,3,3};
-      
 //      int budget = 9;
       int budget = 10;
       System.out.println(ye.solution(d, budget));
