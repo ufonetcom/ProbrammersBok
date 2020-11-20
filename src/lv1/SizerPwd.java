@@ -12,7 +12,7 @@ public class SizerPwd {
               ch[i]=' ';
            }
            
-//           대문자일때 (아스키코드 65~90) else if(65<=ch[i] && ch[i]<=90)
+//           대문자 일때 (아스키코드 65~90) else if(65<=ch[i] && ch[i]<=90)
            else if(Character.isUpperCase(ch[i])){
               if(ch[i]+n<=90) {
                  ch[i]=(char) (ch[i]+n);
@@ -20,7 +20,7 @@ public class SizerPwd {
                  ch[i]=(char)(ch[i]+n-26);
               }
            }
-//           소문자일때 (아스키코드 97~122) else if(97<=ch[i] && ch[i]<=122)
+//           소문자 일때 (아스키코드 97~122) else if(97<=ch[i] && ch[i]<=122)
            else if(Character.isLowerCase(ch[i])) {
               if(ch[i]+n<=122) {
                  ch[i]=(char) (ch[i]+n);
