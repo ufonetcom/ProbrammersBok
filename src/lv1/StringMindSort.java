@@ -18,7 +18,7 @@ public class StringMindSort {
         }
         
         for(int i=0; i<strings.length; i++) {  //strings배열의 n번째 요소들을 따로빼서 tempList에 담는다.
-        	tempList.add(strings[i].substring(n,n+1));
+        	tempList.add(strings[i].substring(n,n+1)); //""+strings[i].charAt(i) 도 가능.
         }
         
         Collections.sort(tempList);     //요소들을 정렬한다(사전순)
