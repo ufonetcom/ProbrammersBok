@@ -10,7 +10,7 @@ public class TopChange {
         
 //        배열 answer의 크기를 정해주는 함수
         int k=0;
-        while(n!=0) {
+        while(n!=0) {  //n>0 도 가능.
         	k++;
         	n=n/10;
         }
