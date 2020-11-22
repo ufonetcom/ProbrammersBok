@@ -9,7 +9,7 @@ public class Smallint {
 	public int[] solution(int[] arr) {
         int[] answer = {};
         
-        if(arr.length==1) {     //원소가 하나일때는 무조건 -1 반환
+        if(arr.length==1) {     //원소가 하나일때는 무조건 -1 반환.
         	answer = new int[1];
         	answer[0] = -1;
         }else {
