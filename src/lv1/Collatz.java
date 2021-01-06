@@ -14,6 +14,7 @@ public class Collatz {
         	answer++;
         	
         	System.out.println(answer + "  " + num);
+        	
         	if(answer==500) {
         		return -1;
         	}
