@@ -41,9 +41,7 @@ public class Ep1Cafe24 {
 			}
 			
 			System.out.println(tmp);
-			
 			answer[i] = tmp;
-			
 		}
 		
 		return answer;
