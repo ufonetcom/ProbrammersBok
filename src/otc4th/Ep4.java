@@ -18,6 +18,9 @@ public class Ep4 {
 				queue.add(tmp);
 			}else break;
 		}
+		//End of Sorting
+
+		//정렬된 큐를 새로운 char형 배열에 담기
 		char[] result = new char[s.length()];
 		for(int i=0; i<result.length; i++){
 			result[i] = queue.poll();
@@ -35,6 +38,7 @@ public class Ep4 {
 				cnt=1;
 			}
 		}
+
 		Collections.sort(list);
 		answer = new int[list.size()];
 		for(int i=0; i<list.size(); i++){
