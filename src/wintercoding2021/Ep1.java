@@ -8,7 +8,6 @@ class Monster{
 	private int mPee;
 	private int mAttack;
 	private int mDepence;
-	
 	private double resultExp;
 	
 	public Monster() {
