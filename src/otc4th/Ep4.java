@@ -1,21 +1,51 @@
 package otc4th;
 
-import java.util.HashMap;
+import java.util.*;
 
 public class Ep4 {
 	public int[] solution(String s) {
-        int[] answer = {};
-        HashMap<Character, Integer> map = new HashMap<Character, Integer>();
-        
-        char x = s.charAt(0);
-        map.put(x, 1);
-        for(int i=1; i<s.length(); i++) {
-        	if(x == s.charAt(i)) {
-        		map.put(x, map.getOrDefault(x, 0)+1);
-        	}
-        	x = s.charAt(i);
-        	
-        }
+		int[] answer = {};
+		Queue<Character> queue = new LinkedList<>();
+		ArrayList<Integer> list = new ArrayList<>();
+
+		for(char x : s.toCharArray()){
+			queue.add(x);
+		}
+		char tmp = s.charAt(s.length()-1); //마지막값을 큐의 첫값과 딱 한번만 비교하기 위하여 저장.
+		for (int i = 0; i < queue.size(); i++) {
+			if(queue.peek()==tmp){
+				tmp = queue.poll();
+				queue.add(tmp);
+			}else break;
+		}
+		//End of Sorting
+
+		//정렬된 큐를 새로운 char형 배열에 담기
+		char[] result = new char[s.length()];
+		for(int i=0; i<result.length; i++){
+			result[i] = queue.poll();
+		}
+
+		char temp2 = result[0];
+		int cnt = 1;
+		for(int i=1; i<result.length; i++){
+			if(result[i] == temp2){
+				cnt++;
+				if(i==result.length-1) list.add(cnt);
+			}else {
+				list.add(cnt);
+				temp2 = result[i];
+				cnt=1;
+			}
+		}
+
+		Collections.sort(list);
+		answer = new int[list.size()];
+		for(int i=0; i<list.size(); i++){
+			answer[i] = list.get(i);
+		}
+
+
         return answer;
     }
 
@@ -24,9 +54,13 @@ public class Ep4 {
 		Ep4 sol = new Ep4();
 
 		//입력값
+		String s = "aaabbaaa";
+		String s2 = "wowwow";
+		System.out.println(Arrays.toString(sol.solution(s)));
 
-
-		System.out.println(sol.solution(""));
+//		for(int v : sol.solution(s)){
+//			System.out.println("["+v+",]");
+//		}
 	}
 
 }
