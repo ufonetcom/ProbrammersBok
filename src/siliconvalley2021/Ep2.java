@@ -69,19 +69,20 @@ public class Ep2 {
         	}
         }
         for(Student student : stu) {
-        	System.out.print(student.getGradeFirst());
+        	System.out.print(student.getDistance()+" ");
         }
         
         int lt = 0;
         for(int i=0; i<stu.size()-1; i++) {
         	if(stu.get(i).getGradeFirst() == stu.get(i+1).getGradeFirst()) {
         		lt++;
-        		if(stu.get(i).getDistance() == stu.get(i+1).getDistance()) {
-        			
-        		}
+        		
         	}else {
-        		for(int j=i-(lt+1); j<=i; j++) {
-        			
+        		Student temp = stu.get(i-lt);
+        		for(int j=i-lt; j<i; j++) {
+        			if(temp.getDistance()<stu.get(j+1).getDistance()) {
+        				
+        			}
         		}
         		lt=0;
         	}
